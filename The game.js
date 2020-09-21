@@ -17,28 +17,31 @@ alert("Je hebt honger, wat ga je doen?");
 var antwoord;
 
 antwoord =prompt("Ga je de jungle in om eten te zoeken?");
-document.write("Ga je de jungle in om eten te zoeken? <br>");
+document.writeln("Ga je de jungle in om eten te zoeken?");
 
 /*A*/if (antwoord == "ja") {
 
+	document.writeln("ja <br>");
 	alert("Je loopt door de jungle en komt een bessenstruik tegen!");
 	alert("Wat ga je doen?");
 
 antwoord =prompt("Ga je de bessen plukken om te eten?");
-document.write("Ga je de bessen plukken om te eten? <br>");
+document.writeln("Ga je de bessen plukken om te eten?");
 
 /*B*/if (antwoord == "ja") {
 
+	document.writeln("ja <br>");
 	alert("Je eet de bessen en je hebt geen honger meer!");
 	alert("Je loopt weer terug naar waar je was gestrand.");
 	alert("Maar, waar was dat ook al weer?!");
 	alert("Het begint al nacht aan het worden, dus je moet snel zijn!");
 
 antwoord= prompt("Welke kant ga je op? Links of rechts?");
-document.write("Welke kant ga je op? Links of rechts? <br>");	
+document.writeln("Welke kant ga je op? Links of rechts?");	
 
 /*F*/if (antwoord == "links") {
 
+	document.writeln("links <br>");
 	alert("Je bent weer op de plaats waar je was gestrand.");
 	alert("Ondertussen is het al bijna nacht.");
 	alert("Het is best koud en je bent moe.");
@@ -47,10 +50,11 @@ document.write("Welke kant ga je op? Links of rechts? <br>");
 	alert("Wat ga je doen?");
 
 antwoord= prompt("Ga je vuur maken? Of lekker slapen..");
-document.write("Ga je vuur maken? Of lekker slapen.. <br>");
+document.writeln("Ga je vuur maken? Of lekker slapen..");
 
 /*G*/if (antwoord == "vuur maken") {
 
+	document.writeln("vuur maken <br>");
 	alert("Het is gelukt!");
 	alert("Je hebt een vuur gemaakt!");
 	alert("Je gaat naast het vuur liggen en valt in slaap..");
@@ -60,10 +64,11 @@ document.write("Ga je vuur maken? Of lekker slapen.. <br>");
 	alert("Wat ga je doen?");
 
 antwoord= prompt("Ga je eten zoeken om je beter te maken? Of accepteer je, je dood..");
-document.write("Ga je eten zoeken om je beter te maken? Of accepteer je, je dood.. <br>");
+document.writeln("Ga je eten zoeken om je beter te maken? Of accepteer je, je dood..");
 
 /*H*/if (antwoord == "eten zoeken") {
 
+	document.writeln("eten zoeken <br>");
 	alert("Je probeert naar eten te zoeken maar je vind niks, je word zwakker en zwakker..");
 	alert("En uiteindelijk, ga je dood.");
 	alert("Volgende keer beter! Klik op de link om het opnieuw te proberen!");
@@ -73,7 +78,7 @@ document.write("Ga je eten zoeken om je beter te maken? Of accepteer je, je dood
 
 
 /*H*/else {
-
+		document.writeln("Ik accepteer mijn dood. <br>");
 		alert("Je gaat dood door het gif.");
 		alert("Jammer! Probeer het opnieuw door op de link te klikken.");
 
@@ -83,6 +88,7 @@ document.write("Ga je eten zoeken om je beter te maken? Of accepteer je, je dood
 
 /*G*/else {
 
+	document.writeln("lekker slapen <br>");
 	alert("Je vriest dood door de kou.");
 	alert("Verander je keuze door op de link te klikken!");
 }
@@ -93,6 +99,7 @@ document.write("Ga je eten zoeken om je beter te maken? Of accepteer je, je dood
 
 /*F*/else {
 
+	document.writeln("rechts <br>");
 	alert("Oeps! dat was niet de goeie kant, je gaat dood door de dieren die je in de nacht hebben verrast..");
 	alert("Klik op de link om je keuze te veranderen!");
 }
@@ -101,23 +108,26 @@ document.write("Ga je eten zoeken om je beter te maken? Of accepteer je, je dood
 
 /*B*/else {
 
+document.writeln("nee <br>");
 alert("Je loopt verder en je komt een boom tegen waar mango's aan groeien.");
 alert("Wat ga je doen?");
 
 antwoord =prompt("Ga je de boom in klimmen om de mango's te plukken?");
-document.write("Ga je de boom in klimmen om de mango's te plukken? <br>");
+document.writeln("Ga je de boom in klimmen om de mango's te plukken?");
 
 /*C*/if (antwoord == "ja") {
 
+document.writeln("ja <br>");
 alert("Nadat je de 3 mango's hebt geplukt ga je weer terug naar waar je was gestrand..");
 alert("Maar waar was dat ook alweer?!");
 alert("Het is al nacht aan het worden dus je moet snel zijn!");
 
 antwoord= prompt("Welke kant ga je op? Links of rechts?");
-document.write("Welke kant ga je op? Links of rechts? <br>");
+document.writeln("Welke kant ga je op? Links of rechts?");
 
 /*D*/if (antwoord == "links") {
 
+	document.writeln("links <br>");
 	alert("Je bent weer waar je was gestrand.");
 	alert("Ondertussen is het al bijna nacht.");
 	alert("Het is best koud en je bent al moe.");
@@ -126,10 +136,11 @@ document.write("Welke kant ga je op? Links of rechts? <br>");
 	alert("Wat ga je doen?");
 
 antwoord= prompt("Ga je een vuur maken? Of lekker slapen.");	
-document.write("Ga je een vuur maken? Of lekker slapen. <br>");
+document.writeln("Ga je een vuur maken? Of lekker slapen.");
 
 /*I*/if (antwoord == "vuur maken") {
 
+	document.writeln("vuur maken <br>");
 	alert("Het is gelukt!");
 	alert("Je hebt een vuur gemaakt!");
 	alert("Je gaat naast het vuur liggen en valt in slaap..");
@@ -140,10 +151,11 @@ document.write("Ga je een vuur maken? Of lekker slapen. <br>");
 	alert("Je moet snel zijn! Voor hij weg is! Wat ga je doen?!");
 
 antwoord= prompt("Ga je roepen? Of een bigbrain actie?");	
-document.write("Ga je roepen? Of een bigbrain actie? <br>");
+document.writeln("Ga je roepen? Of een bigbrain actie?");
 
 	/*I*/if (antwoord == "bigbrain actie") {
 
+		document.writeln("bigbrain actie <br>");
 		alert("Met het stuk glas dat je had gevonden, steek je je hut in de fik!");
 		alert("Door de grote rookwolken die vrijkomen ziet het schip je!");
 		alert("Het schip ziet de wolken van het eiland en vaart er naartoe.");
@@ -155,6 +167,7 @@ document.write("Ga je roepen? Of een bigbrain actie? <br>");
 
 	/*I*/else {
 
+		document.writeln("roepen <br>");
 		alert("Je roept zo hard als je kan!");
 		alert("Maar dat lukt niet!");
 		alert("De boot vaart voorbij, en je bent gedoemd om dood te gaan..");
@@ -166,6 +179,7 @@ document.write("Ga je roepen? Of een bigbrain actie? <br>");
 
 /*I*/else {
 
+	document.writeln("lekker slapen <br>");
 	alert("Je vriest dood door de kou.");
 	alert("Jammer! Probeer het opnieuw door op de link te klikken!");
 }
@@ -177,6 +191,7 @@ document.write("Ga je roepen? Of een bigbrain actie? <br>");
 
 /*D*/else {
 
+	document.writeln("rechts <br>");
 	alert("Oeps! dat was niet de goeie kant, je gaat dood door de dieren die je in de nacht hebben verrast..");
 	alert("Klik op de link om je keuze te veranderen!");
 }
@@ -190,6 +205,7 @@ document.write("Ga je roepen? Of een bigbrain actie? <br>");
 
 /*C*/else {
 
+	document.writeln("nee <br>");
 	alert("Je loopt dieper en dieper de jungle in..");
 	alert("Op een gegeven moment besef je je..");
 	alert("dat je verdwaald bent!");
@@ -207,14 +223,16 @@ document.write("Ga je roepen? Of een bigbrain actie? <br>");
 
 /*A*/else {
 
+	document.writeln("nee <br>");
 	alert("je hebt nog steeds geen eten gevonden!");
 	alert("Wat ga je doen?");
 
 antwoord= prompt("Ga je terug om in de jungle eten te zoeken?");
-document.write("Ga je terug om in de jungle eten te zoeken? <br>");
+document.writeln("Ga je terug om in de jungle eten te zoeken?");
 
 /*E*/if (antwoord == "ja") {
 
+	document.writeln("ja <br>");
 	alert("Klik dan op de link om je keuze te veranderen!");
 } 
 
@@ -222,6 +240,7 @@ document.write("Ga je terug om in de jungle eten te zoeken? <br>");
 
 /*E*/else {
 
+	document.writeln("nee <br>");
 	alert("Je verhongerd en gaat dood, klik op de link om je keuze te veranderen!");
 }
 }
