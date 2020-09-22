@@ -70,13 +70,13 @@ document.writeln("Ga je vuur maken? Of lekker slapen..");
 antwoord= prompt("Ga je eten zoeken om je beter te maken? Of accepteer je, je dood..");
 document.writeln("Ga je eten zoeken om je beter te maken? Of accepteer je, je dood..");
 
-/*H*/if (antwoord == "eten zoeken") {
+/*H*/if (antwoord != "eten zoeken") {
 
-	document.writeln("eten zoeken <br>");
-	console.log("Ga je eten zoeken om je beter te maken? Of accepteer je, je dood.." + antwoord);
-	alert("Je probeert naar eten te zoeken maar je vind niks, je word zwakker en zwakker..");
-	alert("En uiteindelijk, ga je dood.");
-	alert("Volgende keer beter! Klik op de link om het opnieuw te proberen!");
+	document.writeln("Ik accepteer mijn dood. <br>");
+		console.log("Ga je eten zoeken? Of accepteer je, je dood.." + antwoord);
+		alert("Je gaat dood door het gif.");
+		alert("Jammer! Probeer het opnieuw door op de link te klikken.");
+
 } 
 
 
@@ -84,10 +84,11 @@ document.writeln("Ga je eten zoeken om je beter te maken? Of accepteer je, je do
 
 /*H*/else {
 
-		document.writeln("Ik accepteer mijn dood. <br>");
-		console.log("Ga je eten zoeken? Of accepteer je, je dood.." + antwoord);
-		alert("Je gaat dood door het gif.");
-		alert("Jammer! Probeer het opnieuw door op de link te klikken.");
+	document.writeln("eten zoeken <br>");
+	console.log("Ga je eten zoeken om je beter te maken? Of accepteer je, je dood.." + antwoord);
+	alert("Je probeert naar eten te zoeken maar je vind niks, je word zwakker en zwakker..");
+	alert("En uiteindelijk, ga je dood.");
+	alert("Volgende keer beter! Klik op de link om het opnieuw te proberen!");
 
 }
 } 
@@ -166,14 +167,15 @@ document.writeln("Ga je een vuur maken? Of lekker slapen.");
 antwoord= prompt("Ga je roepen? Of een ??? actie?");	
 document.writeln("Ga je roepen? Of een ??? actie?");
 
-	/*I*/if (antwoord == "??? actie") {
+	/*I*/if (antwoord != "??? actie") {
 
-		document.writeln("??? actie <br>");
+		document.writeln("roepen <br>");
 		console.log("Ga je Ga je roepen? Of een ??? actie?" + antwoord);
-		alert("Met het stuk glas dat je had gevonden, steek je je hut in de fik!");
-		alert("Door de grote rookwolken die vrijkomen ziet het schip je!");
-		alert("Het schip ziet de wolken van het eiland en vaart er naartoe.");
-		alert("Je hebt gewonnen! Gefeliciteerd!");
+		alert("Je roept zo hard als je kan!");
+		alert("Maar dat lukt niet!");
+		alert("De boot vaart voorbij, en je bent gedoemd om dood te gaan..");
+
+		
 	} 
 
 
@@ -181,11 +183,12 @@ document.writeln("Ga je roepen? Of een ??? actie?");
 
 	/*I*/else {
 
-		document.writeln("roepen <br>");
+		document.writeln("??? actie <br>");
 		console.log("Ga je Ga je roepen? Of een ??? actie?" + antwoord);
-		alert("Je roept zo hard als je kan!");
-		alert("Maar dat lukt niet!");
-		alert("De boot vaart voorbij, en je bent gedoemd om dood te gaan..");
+		alert("Met het stuk glas dat je had gevonden, steek je je hut in de fik!");
+		alert("Door de grote rookwolken die vrijkomen ziet het schip je!");
+		alert("Het schip ziet de wolken van het eiland en vaart er naartoe.");
+		alert("Je hebt gewonnen! Gefeliciteerd!");
 	}	
 
 } 
