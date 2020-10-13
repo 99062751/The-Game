@@ -75,6 +75,7 @@ if (antwoord == "ja") {
 				document.writeln("Ga je een vuur maken? Of lekker slapen.");
 
 		}
+		
 		else{
 
 			document.writeln("rechts <br>");
