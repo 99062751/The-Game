@@ -4,54 +4,42 @@ alert("Je hebt honger, wat ga je doen?");
 
 var	antwoord; 
 
-antwoord =prompt("Ga je de jungle in om eten te zoeken?");
+antwoord = prompt("Ga je de jungle in om eten te zoeken?");
 document.writeln("Ga je de jungle in om eten te zoeken?");	
 
-if (antwoord == "ja"){
+if (antwoord == "ja"){ //de vraag is: Ga je de jungle in om eten te zoeken?
 
 	document.writeln("ja <br>");
 	console.log("Ga je de jungle in om eten te zoeken?" + antwoord);
 	alert("Je loopt door de jungle en komt een bessenstruik tegen!");
 	alert("Wat ga je doen?");
 
-	antwoord =prompt("Ga je de bessen plukken om te eten?");
+	antwoord = prompt("Ga je de bessen plukken om te eten?");
 	document.writeln("Ga je de bessen plukken om te eten?");
+	if (antwoord == "ja"){ //de vraag is: Ga je de bessen plukken om te eten?
+		document.writeln("ja <br>");
+		console.log("Ga je de bessen plukken om te eten?" + antwoord);
+		alert("Je eet de bessen en je hebt geen honger meer! \n Je loopt weer terug naar waar je was gestrand. Maar, waar was dat ook al weer?!");
+		alert("Het begint al nacht aan het worden, dus je moet snel zijn!");
 
-}	else{
-		document.writeln("nee <br>");
-		console.log("Ga je de jungle in om eten te zoeken?" + antwoord);
-		alert("Na een tijdje heb je nog steeds geen eten gevonden!");
-		alert("Wat ga je doen?");
+		antwoord= prompt("Welke kant ga je op? Links of rechts?");
+		document.writeln("Welke kant ga je op? Links of rechts?");	
 
-		antwoord= prompt("Ga je terug om in de jungle eten te zoeken?");
-		document.writeln("Ga je terug om in de jungle eten te zoeken?");
+		if (antwoord == "links" || "zelfde weg terug"){
+			document.writeln("links <br>");
+			console.log("Welke kant ga je op? Links of rechts?" + antwoord);
+			alert("Je bent weer waar je was gestrand. \n Ondertussen is het al bijna nacht. \n Het is best koud en je bent al moe.	\n Je had een paar takken van vanochtend verzameld.	\n Misschien kan je een vuur maken..		\n Wat ga je doen?");
 
-		if (antwoord == "ja"){
-			document.writeln("ja <br>");
-			console.log("Ga je terug om in de jungle eten te zoeken?" + antwoord);
-			alert("Klik dan op de link om je keuze te veranderen!");
+			antwoord= prompt("Ga je een vuur maken? Of lekker slapen.");	
+			document.writeln("Ga je een vuur maken? Of lekker slapen.");
 
-		}	else{
-				console.log("Ga je terug om in de jungle eten te zoeken?" + antwoord);
-				alert("Je verhongerd en gaat dood.");
-			}
-	}
-
-				if (antwoord == "ja"){
-					document.writeln("ja <br>");
-					console.log("Ga je de bessen plukken om te eten?" + antwoord);
-					alert("Je eet de bessen en je hebt geen honger meer! \n Je loopt weer terug naar waar je was gestrand. Maar, waar was dat ook al weer?!");
-					alert("Het begint al nacht aan het worden, dus je moet snel zijn!");
-
-					antwoord= prompt("Welke kant ga je op? Links of rechts?");
-					document.writeln("Welke kant ga je op? Links of rechts?");	
-
-					else{
-						document.writeln("rechts <br>");
-						console.log("Welke kant ga je op? Links of rechts?" + antwoord);
-						alert("Oeps! dat was niet de goeie kant, je gaat dood door de dieren die je in de nacht hebben verrast..");
-						alert("Klik op de link om je keuze te veranderen!");
-					}
+					
+		}else{ //de vraag is: Welke kant ga je op? Links of rechts? antwoord = rechts
+			document.writeln("rechts <br>");
+			console.log("Welke kant ga je op? Links of rechts?" + antwoord);
+			alert("Oeps! dat was niet de goeie kant, je gaat dood door de dieren die je in de nacht hebben verrast..");
+			alert("Klik op de link om je keuze te veranderen!");
+		}
 
 						if (antwoord == "vuur maken" || "vuur"){
 							document.writeln("vuur maken <br>");
@@ -84,8 +72,30 @@ if (antwoord == "ja"){
 
 								}
 
-															}		
-				}					else{
+						}		
+	}
+
+}else{
+	document.writeln("nee <br>");
+	console.log("Ga je de jungle in om eten te zoeken?" + antwoord);
+	alert("Na een tijdje heb je nog steeds geen eten gevonden!");
+	alert("Wat ga je doen?");
+
+	antwoord= prompt("Ga je terug om in de jungle eten te zoeken?");
+	document.writeln("Ga je terug om in de jungle eten te zoeken?");
+
+		if (antwoord == "ja"){
+			document.writeln("ja <br>");
+			console.log("Ga je terug om in de jungle eten te zoeken?" + antwoord);
+			alert("Klik dan op de link om je keuze te veranderen!");
+
+		}else{
+				console.log("Ga je terug om in de jungle eten te zoeken?" + antwoord);
+				alert("Je verhongerd en gaat dood.");
+		}
+}
+
+									else{
 
 										document.writeln("nee <br>");
 										console.log("Ga je de boom in klimmen om mango's te plukken?" + antwoord);
@@ -114,22 +124,6 @@ if (antwoord == "ja"){
 
 							}
 								
-						if (antwoord == "links" || "zelfde weg terug"){
-							document.writeln("links <br>");
-							console.log("Welke kant ga je op? Links of rechts?" + antwoord);
-							alert("Je bent weer waar je was gestrand. \n Ondertussen is het al bijna nacht. \n Het is best koud en je bent al moe.	\n Je had een paar takken van vanochtend verzameld.	\n Misschien kan je een vuur maken..		\n Wat ga je doen?");
-
-							antwoord= prompt("Ga je een vuur maken? Of lekker slapen.");	
-								document.writeln("Ga je een vuur maken? Of lekker slapen.");
-
-					else{
-						document.writeln("rechts <br>");
-						console.log("Welke kant ga je op? Links of rechts?" + antwoord);
-						alert("Oeps! dat was niet de goeie kant, je gaat dood door de dieren die je in de nacht hebben verrast..");
-						alert("Klik op de link om je keuze te veranderen!");
-					}
-						}
-
 				if (antwoord == "vuur maken" || "vuur"){
 
 					document.writeln("vuur maken <br>");
@@ -163,7 +157,7 @@ if (antwoord == "ja"){
 			alert("Met het stuk glas dat je had gevonden, steek je je hut in de fik! \n Door de grote rookwolken die vrijkomen ziet het schip je! \n Het schip ziet de wolken van het eiland en vaart er naartoe.");
 			alert("Je hebt gewonnen! Gefeliciteerd!");
 	}
-		}							}					
+}							}					
 												}
 				
 	
